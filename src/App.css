@@ -1,9 +1,18 @@
-/* From Uiverse.io by WhiteNervosa */ 
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+
+
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Nav*/ 
 .link {
-    font-size: 18px;
+    font-size: 30px;
     color: #646464;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 900;
     cursor: pointer;
     position: relative;
     border: none;
@@ -12,6 +21,7 @@
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: color;
+    margin-right: 40px;
   }
   
   .link:focus,
@@ -38,3 +48,122 @@
     transition-duration: 400ms;
     transition-property: width, left;
   }
+
+  /* banner */
+  .relativeContainer {
+    position: relative;
+  }
+
+  .slogan {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-95%, -50%);
+    z-index: 1;
+    text-shadow: 1px 1px 2px rgb(190, 190, 190);
+  }
+
+  .tituloSeccion {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    font-style: normal;
+    width: 75%;
+  }
+  
+  @media all and (min-width: 768px) and (max-width: 930px) {
+    .slogan {
+      top: 50%;
+      transform: translate(-80%, -50%);
+    }
+    
+  }
+
+  @media (max-width: 767px) {
+    .slogan {
+      top: 65%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+    .tituloSeccion {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .nav {
+    background: #e2e2e2;
+  }
+
+  .banner {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    display: block;
+    z-index: 0;
+    background: #e2e2e2;
+    
+  }
+
+
+
+  @media (max-width: 767px) {
+    .banner {
+     height: 500px;
+     padding-bottom: 0px;
+    }
+    .containerBtn{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .img-thumbnail {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+
+.tituloSeccion {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  font-style: normal;
+}
+
+
+/* From Uiverse.io by felipesntr */ 
+.btnProductos {
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #000;
+  border: 3px solid yellow;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px yellow;
+}
+
+.btnProductos:hover {
+  transform: translate(5px, -5px);
+}
+
+h3::before,
+h3::after {
+  border-top: .2rem solid black;
+  content: "";
+  display: inline-block;
+  margin: 0 .5rem;
+  transform: translateY(-.5rem);
+  width: 2rem;
+}
+
+.footer {
+  background: rgb(0, 0, 0);
+}
+
+
+
+
