@@ -18,10 +18,10 @@ const Footer = () => {
                   className="text-white"
                   target="_blank"
                 >
-                  Gral. Paz 576, T4000 San Miguel
+                  Gral. Paz 576
                 </a>
               </p>
-              <p>Tucumán, Argentina</p>
+              <p>Buenos Aires, Argentina</p>
             </div>
           </Col>
           <Col md={4} className="mb-3">
