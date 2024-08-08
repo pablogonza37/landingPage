@@ -92,7 +92,7 @@
   }
 
   .nav {
-    background: #e2e2e2;
+    background-color: transparent !important;
   }
 
   .banner {

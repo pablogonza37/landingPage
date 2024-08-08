@@ -2,7 +2,8 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const Navegacion = () => {
     return (
-        <Navbar expand="lg" data-bs-theme="light" className=' nav'>
+        <Navbar expand="lg" data-bs-theme="light" className='border border-bottom shadow nav'>
+          
         <Container>
           <Navbar.Brand href="#home">Landing Page</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
