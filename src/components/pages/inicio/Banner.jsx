@@ -1,5 +1,6 @@
 import React from "react";
 import imgBanner from "../../../assets/banner.png";
+import { Link, NavLink } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -10,7 +11,7 @@ const Banner = () => {
             Más que café, un momento especial.
           </h1>
           <div className='containerBtn mt-4'>
-          <button className='btnProductos'>EXPLORA LOS PRODUCTOS</button>
+          <Link className='btnProductos' to='/productos'>EXPLORA LOS PRODUCTOS</Link>
           </div>
         </div>
         <div className="banner">

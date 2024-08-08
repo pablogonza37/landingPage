@@ -1,129 +1,138 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
 
-
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.mainSection {
+  flex-grow: 1;
+}
 
 .pacifico-regular {
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
 }
-/* Nav*/ 
+
+/* Nav*/
 .link {
-    font-size: 30px;
-    color: #646464;
-    font-family: inherit;
-    font-weight: 900;
-    cursor: pointer;
-    position: relative;
-    border: none;
-    background: none;
-    text-transform: uppercase;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: color;
-    margin-right: 40px;
-  }
-  
-  .link:focus,
-  .link:hover {
-    color: #302f2f;
-  }
-  
-  .link:focus:after,
-  .link:hover:after {
-    width: 100%;
-    left: 0%;
-  }
-  
-  .link:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #000000;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
-  }
+  font-size: 18px;
+  color: #646464;
+  font-family: inherit;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  margin-right: 40px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 
-  /* banner */
-  .relativeContainer {
-    position: relative;
-  }
+.link:focus,
+.link:hover {
+  color: #302f2f;
+}
 
+.link:focus:after,
+.link:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.link:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #000000;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+/* banner */
+.relativeContainer {
+  position: relative;
+}
+
+.slogan {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-95%, -50%);
+  z-index: 1;
+  text-shadow: 1px 1px 2px rgb(190, 190, 190);
+}
+
+.tituloSeccion {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  font-style: normal;
+  width: 75%;
+}
+
+@media all and (min-width: 768px) and (max-width: 930px) {
   .slogan {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-95%, -50%);
-    z-index: 1;
-    text-shadow: 1px 1px 2px rgb(190, 190, 190);
+    top: 50%;
+    transform: translate(-80%, -50%);
   }
+}
 
-  .tituloSeccion {
-    font-family: "Anton SC", sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    font-style: normal;
-    width: 75%;
-  }
-  
-  @media all and (min-width: 768px) and (max-width: 930px) {
-    .slogan {
-      top: 50%;
-      transform: translate(-80%, -50%);
-    }
-    
-  }
-
-  @media (max-width: 767px) {
-    .slogan {
-      top: 65%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-    }
-    .tituloSeccion {
-      text-align: center;
-      width: 100%;
-    }
-  }
-
-  .nav {
-    background-color: transparent !important;
-  }
-
-  .banner {
-    object-fit: cover;
-    height: auto;
+@media (max-width: 767px) {
+  .slogan {
+    top: 65%;
+    transform: translate(-50%, -50%);
     width: 100%;
-    display: block;
-    z-index: 0;
-    background: #e2e2e2;
-    
   }
-
-
-
-  @media (max-width: 767px) {
-    .banner {
-     height: 500px;
-     padding-bottom: 0px;
-    }
-    .containerBtn{
-      display: flex;
-      justify-content: center;
-    }
+  .tituloSeccion {
+    text-align: center;
+    width: 100%;
   }
+}
 
-  .img-thumbnail {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+.nav {
+  background-color: transparent ;
+}
+
+.banner {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  display: block;
+  z-index: 0;
+  background: #e2e2e2;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 500px;
+    padding-bottom: 0px;
   }
+  .containerBtn {
+    display: flex;
+    justify-content: center;
+  }
+}
 
+.img-thumbnail {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
 
 .tituloSeccion {
   font-family: "Anton SC", sans-serif;
@@ -132,8 +141,6 @@
   font-style: normal;
 }
 
-
-/* From Uiverse.io by felipesntr */ 
 .btnProductos {
   font-size: 1rem;
   padding: 0.8em 2em;
@@ -144,6 +151,7 @@
   font-weight: bolder;
   transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
   box-shadow: -5px 5px 0px 0px yellow;
+  text-decoration: none;
 }
 
 .btnProductos:hover {
@@ -152,18 +160,17 @@
 
 h3::before,
 h3::after {
-  border-top: .2rem solid black;
+  border-top: 0.2rem solid black;
   content: "";
   display: inline-block;
-  margin: 0 .5rem;
-  transform: translateY(-.5rem);
+  margin: 0 0.5rem;
+  transform: translateY(-0.5rem);
   width: 2rem;
 }
 
 .footer {
   background: rgb(0, 0, 0);
 }
-
 
 /* contacto */
 
@@ -176,7 +183,7 @@ h3::after {
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
-/* From Uiverse.io by gharsh11032000 */ 
+/* From Uiverse.io by gharsh11032000 */
 .form-container {
   width: 100%;
   background-color: #fff;
@@ -284,29 +291,27 @@ h3::after {
   color: #212121;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  box-sizing: border-box;
+
   border-radius: 10px;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
 }
 
-.opcionesContacto{
+.opcionesContacto {
   margin: auto;
 }
 
-.opcionesContacto h4{
+.opcionesContacto h4 {
   font-size: 30px;
   font-weight: 400;
-  
 }
 
 /* productos */
-/* From Uiverse.io by G4b413l */ 
+/* From Uiverse.io by G4b413l */
 .card {
   position: relative;
   width: 100%;
   height: 600px;
-  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 120ms;
   display: flex;
@@ -327,7 +332,7 @@ h3::after {
 }
 
 .card .price {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 0.9em;
   left: 0.625em;
   bottom: 0.625em;
@@ -347,10 +352,3 @@ h3::after {
   height: 300px;
   object-fit: cover;
 }
-
-
-
-
-
-
-

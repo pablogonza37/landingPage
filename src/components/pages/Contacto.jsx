@@ -27,7 +27,7 @@ const Contacto = () => {
 
   return (
     <>
-      <section>
+      <section className='mainSection'>
         <div className="position-relative">
           <div className="tituloContacto">
             <h2 className=" display-1 tituloSeccion text-white text-center">
@@ -37,11 +37,11 @@ const Contacto = () => {
           <img className="img-fluid w-100" src={bannerContacto} alt="" />
         </div>
       </section>
-      <section>
+      <Container>
         <Row className="my-5 ">
           <Col md={6} className="d-flex justify-content-center p-5 ">
             <div class="form-container shadow">
-              <div class="logo-container">Consulta</div>
+              <div className="logo-container">Consulta</div>
               <Form onSubmit={handleSubmit(onSubmit)} className="form ">
                 <Form.Group controlId="formName" className="mb-2 form-group">
                   <Form.Label>Nombre completo*</Form.Label>
@@ -249,7 +249,7 @@ const Contacto = () => {
             </Button>
           </Modal.Footer>
         </Modal>
-      </section>
+      </Container>
     </>
   );
 };
