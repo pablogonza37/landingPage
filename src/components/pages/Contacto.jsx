@@ -166,16 +166,16 @@ const Contacto = () => {
           <Col md={6} className="d-flex justify-content-center p-5">
             <div className="contact-container text-center">
               <div className="opcionesContacto">
-                <h4 className=""><i class="bi bi-envelope-at-fill"></i> Email</h4>
+                <h4><i className="bi bi-envelope-at-fill"></i> Email</h4>
                 <p>cafeteria@gmail.com</p>
               </div>
 
               <div className="opcionesContacto">
-                <h4 className=""><i class="bi bi-telephone-forward-fill"></i> Llamada</h4>
+                <h4><i className="bi bi-telephone-forward-fill"></i> Llamada</h4>
                 <p>(+54) 11-1234567</p>
               </div>
               <div className="opcionesContacto">
-                <h4 className=""><i class="bi bi-geo-alt-fill"></i> Direccion</h4>
+                <h4><i className="bi bi-geo-alt-fill"></i> Direccion</h4>
                 <p>Calle 500</p>
               </div>
             </div>
@@ -187,7 +187,7 @@ const Contacto = () => {
             <Modal.Title>Política de privacidad</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h3>PROTECCIÓN DE DATOS</h3>
+            <h4>PROTECCIÓN DE DATOS</h4>
             <p>
               En Rolling Coffee valoramos la privacidad de nuestros clientes y
               nos esforzamos al máximo por mantenerla, es por ello que:

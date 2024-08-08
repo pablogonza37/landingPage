@@ -6,6 +6,7 @@ import Banner from "./components/pages/inicio/Banner";
 import Destacados from "./components/pages/inicio/Destacados";
 import Footer from "./components/common/Footer";
 import Contacto from "./components/pages/Contacto";
+import Productos from "./components/pages/Productos";
 
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
     <>
       <NavBar></NavBar>
       {/*<Banner></Banner>
-      <Destacados></Destacados>*/}
-      <Contacto></Contacto>
+      <Destacados></Destacados>
+      <Contacto></Contacto>*/}
+      <Productos></Productos>
       <Footer></Footer>
     </>
   )
