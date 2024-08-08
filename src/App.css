@@ -352,3 +352,28 @@ h3::after {
   height: 300px;
   object-fit: cover;
 }
+
+/* seccion servicios */
+
+/* From Uiverse.io by satyamchaudharydev */ 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1.5em;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  height: 100%; 
+}
+
+.iconos {
+  color: yellowgreen;
+  font-size: 40px;
+}
+
+
+
+
