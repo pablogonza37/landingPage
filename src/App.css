@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 #root {
   display: flex;
@@ -21,7 +22,7 @@
 /* Nav*/
 .link {
   font-size: 18px;
-  color: #646464;
+  color: #d8d8d8;
   font-family: inherit;
   font-weight: 400;
   cursor: pointer;
@@ -40,7 +41,7 @@
 
 .link:focus,
 .link:hover {
-  color: #302f2f;
+  color: #ffffff;
 }
 
 .link:focus:after,
@@ -57,7 +58,7 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #000000;
+  background-color: #ffffff;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
@@ -105,7 +106,8 @@
 }
 
 .nav {
-  background-color: transparent ;
+  background-color: black ;
+  color:rgb(255, 255, 255)
 }
 
 .banner {
@@ -157,16 +159,15 @@
 .btnProductos:hover {
   transform: translate(5px, -5px);
 }
-
-h3::before,
+/*
 h3::after {
-  border-top: 0.2rem solid black;
+  border-top: 0.2rem solid rgb(255, 255, 255);
   content: "";
   display: inline-block;
   margin: 0 0.5rem;
-  transform: translateY(-0.5rem);
-  width: 2rem;
-}
+  transform: translateY(-0.8rem);
+  width: 50%;
+}*/
 
 .footer {
   background: rgb(0, 0, 0);
@@ -306,7 +307,7 @@ h3::after {
 }
 
 /* productos */
-/* From Uiverse.io by G4b413l */
+
 .card {
   position: relative;
   width: 100%;
@@ -354,25 +355,42 @@ h3::after {
 }
 
 /* seccion servicios */
+.tituloServicios{
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+  color: white;
+}
 
 /* From Uiverse.io by satyamchaudharydev */ 
-.card {
+.cardServicios {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  padding: 1.5em;
+  padding: 3em;
   border-radius: 5px;
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  height: 100%; 
+  height: 350px; 
+  margin-bottom: 15px;
 }
 
 .iconos {
   color: yellowgreen;
   font-size: 40px;
 }
+
+
+
+
+
+
+
+
+
 
 
 

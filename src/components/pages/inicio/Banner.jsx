@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <section className="shadow">
+    <section >
       <div className="position-relative">
         <div className="slogan">
           <h1 className="display-2  tituloSeccion">

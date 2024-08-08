@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Servicios = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <Container className="my-5">
-      <h3 className="text-center mb-5">Nuestros servicios</h3>
-      <Row className="g-4"> {/* Asegúrate de que haya un espaciado entre las columnas */}
-        <Col md={3} className="d-flex">
+    <section className="p-5 bg-black">
+
+
+      <h2 className="mb-5 tituloServicios" data-aos="zoom-in">Nuestros servicios</h2>
+      <Row className="g-6 my-5"> 
+        <Col md={3} sm={6} className="d-flex">
         
-          <div className="card flex-fill">
+          <div className="cardServicios flex-fill" data-aos="zoom-out-up">
           <i className="bi bi-cup-hot-fill iconos"></i>
             <div className="icon"></div>
             <strong>Café de Especialidad</strong>
@@ -17,8 +26,8 @@ const Servicios = () => {
             </div>
           </div>
         </Col>
-        <Col md={3} className="d-flex">
-          <div className="card flex-fill">
+        <Col md={3} sm={6} className="d-flex" data-aos="zoom-out-up">
+          <div className="cardServicios flex-fill">
           <i className="bi bi-cake2-fill iconos"></i>
             <div className="icon"></div>
             <strong>Repostería Artesanal</strong>
@@ -27,8 +36,8 @@ const Servicios = () => {
             </div>
           </div>
         </Col>
-        <Col md={3} className="d-flex">
-          <div className="card flex-fill">
+        <Col md={3} sm={6} className="d-flex" data-aos="zoom-out-up">
+          <div className="cardServicios flex-fill">
           <i className="bi bi-wifi iconos"></i>
             <div className="icon"></div>
             <strong>Wi-Fi Gratis</strong>
@@ -37,8 +46,8 @@ const Servicios = () => {
             </div>
           </div>
         </Col>
-        <Col md={3} className="d-flex">
-          <div className="card flex-fill shadow">
+        <Col md={3} sm={6} className="d-flex" data-aos="zoom-out-up">
+          <div className="cardServicios flex-fill shadow">
           <i className="bi bi-people-fill iconos"></i>
             <div className="icon"></div>
             <strong>Espacios de Reuniones</strong>
@@ -48,7 +57,8 @@ const Servicios = () => {
           </div>
         </Col>
       </Row>
-    </Container>
+      
+    </section>
   );
 };
 

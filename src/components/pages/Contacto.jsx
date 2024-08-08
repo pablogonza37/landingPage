@@ -40,7 +40,7 @@ const Contacto = () => {
       <Container>
         <Row className="my-5 ">
           <Col md={6} className="d-flex justify-content-center p-5 ">
-            <div class="form-container shadow">
+            <div className="form-container shadow">
               <div className="logo-container">Consulta</div>
               <Form onSubmit={handleSubmit(onSubmit)} className="form ">
                 <Form.Group controlId="formName" className="mb-2 form-group">
@@ -157,7 +157,7 @@ const Contacto = () => {
                   )}
                 </Form.Group>
 
-                <button class="form-submit-btn" type="submit">
+                <button className="form-submit-btn" type="submit">
                   Enviar
                 </button>
               </Form>
@@ -189,7 +189,7 @@ const Contacto = () => {
           <Modal.Body>
             <h4>PROTECCIÓN DE DATOS</h4>
             <p>
-              En Rolling Coffee valoramos la privacidad de nuestros clientes y
+              En Coffee valoramos la privacidad de nuestros clientes y
               nos esforzamos al máximo por mantenerla, es por ello que:
             </p>
             <p>

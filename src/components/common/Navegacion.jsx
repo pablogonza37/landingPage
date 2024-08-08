@@ -3,10 +3,10 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navegacion = () => {
     return (
-        <Navbar expand="lg" data-bs-theme="light" className='border border-bottom shadow nav'>
+        <Navbar expand="lg" data-bs-theme="light" className='shadow nav py-4'>
           
         <Container>
-          <Navbar.Brand as={Link} to="/">Landing Page</Navbar.Brand>
+          <Navbar.Brand className='text-white fw-bold' as={Link} to="/">LOGO</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-center">

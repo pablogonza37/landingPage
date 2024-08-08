@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Form, Container, Row, Modal, Button } from "react-bootstrap";
+import { Form, Container, Row, Modal, Button, Spinner } from "react-bootstrap";
 import { leerProductosAPI, obtenerProductoAPI } from "../../helpers/queries";
 import CardProducto from "./CardProducto";
 import Swal from "sweetalert2";
@@ -11,6 +11,7 @@ const Productos = () => {
   const [show, setShow] = useState(false);
   const [productoModal, setProductoModal] = useState({});
   const [cantidad, setCantidad] = useState(1);
+  const [spinner, setSpinner] = useState(true);
 
   useEffect(() => {
     consultarAPI();
@@ -32,12 +33,15 @@ const Productos = () => {
 
   const consultarAPI = async () => {
     try {
+      setSpinner(true);
       const resp = await leerProductosAPI();
       if (resp && resp.length > 0) {
         setProductos(resp);
+        setSpinner(false);
       }
     } catch (error) {
       console.error(error);
+      setSpinner(false);
     }
   };
 
@@ -89,6 +93,11 @@ const Productos = () => {
           <option value="Salado">Salado</option>
         </Form.Control>
       </Form.Group>
+      {spinner ? (
+          <div className="my-4 text-center">
+            <Spinner animation="border" variant="dark" />
+          </div>
+        ) : (
       <Row className="mt-4">
         {filtrarProductosPorCategoria().map((producto) => (
           <CardProducto
@@ -98,6 +107,7 @@ const Productos = () => {
           />
         ))}
       </Row>
+      )}
 
       <Modal show={show} onHide={handleClose} size="md">
         <Modal.Header closeButton>
