@@ -2,10 +2,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-
 const Footer = () => {
-    return (
-        <section className="text-white footer py-5 text-center shadow">
+  return (
+    <section className="text-white footer py-5 text-center shadow">
       <Container>
         <Row>
           <Col md={4} className="mb-3">
@@ -36,9 +35,7 @@ const Footer = () => {
             {" "}
             <div>
               <h3>Contáctanos</h3>
-              <p>
-                
-              </p>
+              <p></p>
               <p>+54-0381-12345678</p>
             </div>
           </Col>
@@ -62,7 +59,7 @@ const Footer = () => {
         </a>
       </Container>
     </section>
-    );
+  );
 };
 
 export default Footer;

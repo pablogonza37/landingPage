@@ -8,6 +8,7 @@ import Contacto from "./components/pages/Contacto";
 import Productos from "./components/pages/Productos";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Inicio from "./components/pages/Inicio";
+import Error404 from "./components/pages/Error404";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
             path="/productos"
             element={<Productos></Productos>}
           ></Route>
-        </Routes>
+          <Route path="*" element={<Error404></Error404>}></Route>
+        </Routes>      
         <Footer></Footer>
       </BrowserRouter>
     </>

@@ -7,7 +7,7 @@ const Navegacion = () => {
           
         <Container>
           <Navbar.Brand className='text-white fw-bold' as={Link} to="/">LOGO</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler border-0"/>
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-center">
             <NavLink href="#home" className='link' to="/">Inicio</NavLink>
