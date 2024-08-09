@@ -113,6 +113,9 @@
     text-align: center;
     width: 100%;
   }
+  .link {
+    margin-right: 0px;
+  }
 }
 
 .nav {
@@ -385,7 +388,7 @@ h3::after {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   height: 350px; 
-  margin-bottom: 0px;
+  margin-bottom: 15px;
 }
 
 .iconos {

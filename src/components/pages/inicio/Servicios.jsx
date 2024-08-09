@@ -17,7 +17,7 @@ const Servicios = () => {
       <Row className="g-6 my-5"> 
         <Col md={3} sm={6} className="d-flex">
         
-          <div className="cardServicios flex-fill" data-aos="zoom-out-up">
+          <div className="cardServicios flex-fill" data-aos="zoom-in">
           <i className="bi bi-cup-hot-fill iconos"></i>
             <div className="icon"></div>
             <strong>Café de Especialidad</strong>
@@ -26,7 +26,7 @@ const Servicios = () => {
             </div>
           </div>
         </Col>
-        <Col md={3} sm={6} className="d-flex" data-aos="zoom-out-up">
+        <Col md={3} sm={6} className="d-flex" data-aos="zoom-in">
           <div className="cardServicios flex-fill">
           <i className="bi bi-cake2-fill iconos"></i>
             <div className="icon"></div>
@@ -36,7 +36,7 @@ const Servicios = () => {
             </div>
           </div>
         </Col>
-        <Col md={3} sm={6} className="d-flex" data-aos="zoom-out-up">
+        <Col md={3} sm={6} className="d-flex" data-aos="zoom-in">
           <div className="cardServicios flex-fill">
           <i className="bi bi-wifi iconos"></i>
             <div className="icon"></div>
@@ -46,7 +46,7 @@ const Servicios = () => {
             </div>
           </div>
         </Col>
-        <Col md={3} sm={6} className="d-flex" data-aos="zoom-out-up">
+        <Col md={3} sm={6} className="d-flex" data-aos="zoom-in">
           <div className="cardServicios flex-fill shadow">
           <i className="bi bi-people-fill iconos"></i>
             <div className="icon"></div>

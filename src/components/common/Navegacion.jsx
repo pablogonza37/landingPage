@@ -1,12 +1,13 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from "react-router-dom";
+import Logo from '../../assets/logo.png'
 
 const Navegacion = () => {
     return (
         <Navbar expand="lg" data-bs-theme="light" className='shadow nav py-4'>
           
         <Container>
-          <Navbar.Brand className='text-white fw-bold' as={Link} to="/">LOGO</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/"><img src={Logo} alt="" className="img-fluid" width={200}/></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler border-0"/>
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-center">

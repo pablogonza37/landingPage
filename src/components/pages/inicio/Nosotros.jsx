@@ -34,7 +34,8 @@ const Nosotros = () => {
           <img
             src="https://images.pexels.com/photos/827528/pexels-photo-827528.jpeg"
             alt=""
-            className="img-fluid " data-aos="fade-left"
+            className="img-fluid"
+            data-aos="zoom-in"
           />
         </Col>
       </Row>

@@ -4,6 +4,9 @@
 
 Este es un proyecto de una landing page para una cafetería, creada con React. La página permite mostrar los productos de la cafetería utilizando una base de datos. Está diseñada para ser visualmente atractiva y funcional, utilizando varias tecnologías modernas para mejorar la experiencia del usuario.
 
+## Demo
+Puedes ver una demostración del proyecto en vivo en [Netlify](https://landing-page-cafeteria.netlify.app/).
+
 ## Tecnologías Utilizadas
 
 - **React**: Biblioteca principal para la construcción de la interfaz de usuario.
@@ -25,9 +28,9 @@ Para comenzar a trabajar con este proyecto, sigue los siguientes pasos:
 
 2. **Navega al directorio del proyecto:**
 
-cd landingPage
+   cd landingPage
 
 
 3. **Instala las dependencias:**
 
-npm install
+   npm install
